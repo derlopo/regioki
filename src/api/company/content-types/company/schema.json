@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "companies",
+  "info": {
+    "singularName": "company",
+    "pluralName": "companies",
+    "displayName": "Company",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "company_name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text"
+    },
+    "contact_person": {
+      "type": "text"
+    },
+    "user_count": {
+      "type": "integer"
+    },
+    "company_users": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::company-user.company-user",
+      "mappedBy": "company_id"
+    },
+    "company_status": {
+      "type": "enumeration",
+      "enum": [
+        "active",
+        "inactive"
+      ]
+    },
+    "Assign_AI_App": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::company-app.company-app",
+      "mappedBy": "company_id"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Company_TypeID": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::company-type.company-type",
+      "inversedBy": "Companies"
+    },
+    "ai_tokens": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ai-token.ai-token",
+      "mappedBy": "company"
+    },
+    "tax_id": {
+      "type": "string"
+    }
+  }
+}

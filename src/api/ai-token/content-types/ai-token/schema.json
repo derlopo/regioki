@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ai_tokens",
+  "info": {
+    "singularName": "ai-token",
+    "pluralName": "ai-tokens",
+    "displayName": "AI_Token",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "token_used": {
+      "type": "biginteger"
+    },
+    "Token_date": {
+      "type": "datetime"
+    },
+    "Action": {
+      "type": "text"
+    },
+    "Ai_System": {
+      "type": "string"
+    },
+    "last_used": {
+      "type": "datetime"
+    },
+    "company": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::company.company",
+      "inversedBy": "ai_tokens"
+    },
+    "company_users": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::company-user.company-user",
+      "inversedBy": "ai_tokens"
+    }
+  }
+}

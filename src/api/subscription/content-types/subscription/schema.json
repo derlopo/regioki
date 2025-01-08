@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subscriptions",
+  "info": {
+    "singularName": "subscription",
+    "pluralName": "subscriptions",
+    "displayName": "Subscription",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Subscription_package_name": {
+      "type": "text"
+    },
+    "last_renewed_at": {
+      "type": "datetime"
+    },
+    "subscription_type_id": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::subscription-type.subscription-type",
+      "mappedBy": "subscription"
+    },
+    "company_user_id": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::company-user.company-user",
+      "inversedBy": "subscriptions"
+    },
+    "subscription_status": {
+      "type": "enumeration",
+      "enum": [
+        "active",
+        "inactive"
+      ]
+    },
+    "start_date": {
+      "type": "datetime"
+    },
+    "end_date": {
+      "type": "datetime"
+    }
+  }
+}
