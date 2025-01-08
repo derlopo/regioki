@@ -1,0 +1,93 @@
+{
+  "name": "RegioKI-Customer",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "app",
+  "sourceRoot": "apps/RegioKI-Customer/src",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:application",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/RegioKI-Customer",
+        "index": "apps/RegioKI-Customer/src/index.html",
+        "browser": "apps/RegioKI-Customer/src/main.ts",
+        "polyfills": ["zone.js"],
+        "tsConfig": "apps/RegioKI-Customer/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "apps/RegioKI-Customer/public"
+          }
+        ],
+        "styles": [
+          "@angular/material/prebuilt-themes/azure-blue.css",
+          "apps/RegioKI-Customer/src/styles.scss"
+        ],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "2mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "2mb"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "buildTarget": "RegioKI-Customer:build:production"
+        },
+        "development": {
+          "buildTarget": "RegioKI-Customer:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "buildTarget": "RegioKI-Customer:build"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/RegioKI-Customer/jest.config.ts"
+      }
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "RegioKI-Customer:build",
+        "port": 4200,
+        "staticFilePath": "dist/apps/RegioKI-Customer/browser",
+        "spa": true
+      }
+    }
+  }
+}

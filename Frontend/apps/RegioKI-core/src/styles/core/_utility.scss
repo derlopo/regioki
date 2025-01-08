@@ -1,0 +1,345 @@
+.spacer {
+  margin-top: 20px;
+}
+
+.regular-spacer {
+  margin-top: 30px;
+}
+
+.big-spacer {
+  margin-top: 80px;
+}
+
+.bigger-spacer {
+  margin-top: 160px;
+}
+
+.push {
+  margin-left: auto;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.one {
+  flex: 1 1 0;
+}
+
+.two {
+  flex: 2 1 0;
+}
+
+.three {
+  flex: 3 1 0;
+}
+
+.four {
+  flex: 4 1 0;
+}
+
+.five {
+  flex: 5 1 0;
+}
+
+.six {
+  flex: 6 1 0;
+}
+
+.seven {
+  flex: 7 1 0;
+}
+
+.eight {
+  flex: 8 1 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.bg-primary-light {
+  background-color: $primary-light !important;
+}
+
+.bg-primary {
+  background-color: $primary !important;
+}
+
+.bg-grey {
+  background-color: gray;
+  color: white;
+  border-color: black !important;
+}
+
+.bg-red {
+  background-color: red !important;
+  color: white !important;
+}
+
+.bg-grey-light {
+  background-color: lightgray !important;
+}
+
+.bg-green {
+  background-color: green !important;
+}
+
+.bg-orange {
+  background-color: orange !important;
+  color: white;
+}
+
+.orange {
+  color: orange;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.align-items-center {
+  display: flex;
+  align-items: center;
+}
+
+.justify-content-center {
+  display: flex;
+  justify-content: center;
+}
+
+.justify-content-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.w-two {
+  width: 50%;
+}
+
+.w-three {
+  width: 33.33%;
+}
+
+.w-four {
+  width: 25%;
+}
+
+.w-five {
+  width: 20%;
+}
+
+.w-fit-content {
+  width: fit-content;
+}
+
+.w-six {
+  width: 16.66% !important;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.btn-normal-p25 {
+  width: fit-content;
+  padding: 25px;
+  border-radius: 0;
+}
+
+.fx-btw {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close.mat-mdc-icon-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 5px;
+  line-height: 14px;
+  min-width: auto;
+}
+
+.close .mat-icon {
+  font-weight: bold;
+}
+
+.mat-mdc-dialog-container .mdc-dialog__surface {
+  padding: 40px;
+  border-radius: 20px !important;
+  max-height: 95vh !important;
+}
+
+.fx-gap-30 {
+  display: flex;
+  gap: 30px;
+}
+
+.uc-border {
+  border: 4px solid black;
+}
+
+.login-btn {
+  width: 100%;
+  color: white !important;
+}
+
+.bot-border-grey-light {
+  border-bottom: 1px solid lightgrey;
+  max-height: 51.5px;
+}
+
+#overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.spinner-center {
+  width: 40%;
+  margin-left: auto;
+  display: block;
+  margin-right: auto;
+}
+
+.bg-button-primary {
+  background-color: $primary !important;
+  color: white !important;
+}
+
+.bg-button-primary-light {
+  background-color: $primary-light !important;
+  color: white !important;
+}
+
+.arrows {
+  width: 90%;
+  border: 0px solid white;
+  color: white;
+  background-color: $primary;
+  height: 55px;
+  cursor: pointer;
+  margin: auto 0px;
+}
+
+.arrows:disabled {
+  background-color: #d2d2d2;
+  color: #f5f5f5;
+  cursor: default;
+}
+
+.border {
+  border: 2px solid black;
+  border-radius: 12px;
+}
+
+.border:hover {
+  border-color: $primary;
+  border: 2px solid $primary;
+}
+
+.elementsFromArray {
+  height: 50px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  box-shadow: 2px 1px 3px #d2d2d2;
+}
+
+.elementsFromArray:hover {
+  background-color: $primary-light;
+  color: $primary;
+}
+
+.add-Parameter-button {
+  background-color: $primary !important;
+}
+
+.designationButton {
+  background-color: $primary !important;
+  color: white !important;
+  padding: 20px;
+  margin: 10px;
+  width: 'max-content';
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
+.displayFlex {
+  display: flex !important;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.align-items-end {
+  align-items: end !important;
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+
+.justify-content-end {
+  justify-content: end !important;
+}
+
+.justify-content-sb {
+  justify-content: space-between !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.text-danger {
+  color: #d50000;
+}

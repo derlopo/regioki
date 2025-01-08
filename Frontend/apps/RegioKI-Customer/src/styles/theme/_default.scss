@@ -1,0 +1,18 @@
+@use '@angular/material' as mat;
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+// Define your theme using mat.define-theme
+$regioki-theme: mat.define-theme(
+  (
+    color: (
+      primary: mat.$azure-palette,
+    ),
+    typography: (
+      brand-family: 'Calibri',
+    ),
+  )
+);
+
+html {
+  @include mat.all-component-themes($regioki-theme);
+}

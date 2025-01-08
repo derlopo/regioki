@@ -1,0 +1,47 @@
+// // ==================================================
+// // Material Components Style Fix
+// // ==================================================
+
+
+  // .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-floating-label {
+  //   color: #808080 !important;
+  // }
+  .mdc-text-field--outlined:not(.mdc-text-field--disabled):focus-within .mdc-floating-label {
+    color: #008080 !important;
+}
+
+.mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-floating-label {
+    color: #808080 !important;
+}
+
+  .mat-pseudo-checkbox-minimal.mat-pseudo-checkbox-checked::after, .mat-pseudo-checkbox-minimal.mat-pseudo-checkbox-indeterminate::after {
+    color: #008080 !important;
+  }
+  .mdc-text-field {
+    padding: 0 16px;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: #008080 !important;
+    overflow: hidden;
+    border :1px gray !important;
+    will-change: opacity, transform, color;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+  // ::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  //   background-color: white !important;
+  //   border-radius: 10px;
+  //   width: 100%;
+  //   // color: gray !important;
+  //   border: 2px solid #D2D2D2 !important;
+  //   border-radius: 10px;
+  // }
+.mdc-text-field--outlined  {
+    stroke: none !important; 
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-floating-label {
+  color: green !important;
+}

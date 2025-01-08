@@ -1,0 +1,16 @@
+@use 'sass:map';
+@use '@angular/material' as mat;
+
+// background colors
+//
+@mixin regioki-utility-colors($theme) {
+  $primary: map.get($theme, primary);
+  $accent: map.get($theme, accent);
+  $background: map.get($theme, 'background');
+  $foreground: map.get($theme, 'foreground');
+
+  .regioki-bg-primary {
+    background-color: mat.get-color-from-palette($primary, 100) !important;
+    color: mat.get-color-from-palette($foreground, text) !important;
+  }
+}
