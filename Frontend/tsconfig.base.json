@@ -1,0 +1,51 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@env/*": ["apps/RegioKI-core/src/environments/*"],
+      "@env/customer/*": ["apps/RegioKI-Customer/src/environments/*"],
+      "@regio-ki/ai-app-card": ["libs/shared/ui/ai-app-card/src/index.ts"],
+      "@regio-ki/apps-management": ["libs/apps-management/src/index.ts"],
+      "@regio-ki/auth": ["libs/auth/src/index.ts"],
+      "@regio-ki/company-details-table": [
+        "libs/shared/ui/under-construction/company-details-table/src/index.ts"
+      ],
+      "@regio-ki/company-table": ["libs/shared/ui/src/index.ts"],
+      "@regio-ki/company-user": ["libs/company-user/src/index.ts"],
+      "@regio-ki/confirmation-dialog": [
+        "libs/shared/ui/confirmation-dialog/src/index.ts"
+      ],
+      "@regio-ki/core": ["libs/core/src/index.ts"],
+      "@regio-ki/customer-management": [
+        "libs/customer-management/src/index.ts"
+      ],
+      "@regio-ki/d3-graphs": ["libs/shared/ui/d3-graphs/src/index.ts"],
+      "@regio-ki/dashboard": ["libs/dashboard/src/index.ts"],
+      "@regio-ki/data-entry-app": ["libs/data-entry-app/src/index.ts"],
+      "@regio-ki/images-upload": ["libs/shared/ui/images-upload/src/index.ts"],
+      "@regio-ki/layout": ["libs/layout/src/index.ts"],
+      "@regio-ki/material": ["libs/shared/material/src/index.ts"],
+      "@regio-ki/regioki-core": ["libs/regioki-core/src/index.ts"],
+      "@regio-ki/searchable-table": [
+        "libs/shared/ui/searchable-table/src/index.ts"
+      ],
+      "@regio-ki/under-construction": [
+        "libs/shared/ui/under-construction/src/index.ts"
+      ]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
