@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subscription_types",
+  "info": {
+    "singularName": "subscription-type",
+    "pluralName": "subscription-types",
+    "displayName": "Subscription_Type"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "plan_type": {
+      "type": "enumeration",
+      "enum": [
+        "standard",
+        "premium"
+      ]
+    },
+    "package_cost": {
+      "type": "decimal"
+    },
+    "subscription_duration": {
+      "type": "integer"
+    },
+    "subscription": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::subscription.subscription",
+      "inversedBy": "subscription_type_id"
+    }
+  }
+}

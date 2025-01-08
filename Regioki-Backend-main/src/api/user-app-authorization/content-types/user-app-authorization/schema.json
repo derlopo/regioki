@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_app_authorizations",
+  "info": {
+    "singularName": "user-app-authorization",
+    "pluralName": "user-app-authorizations",
+    "displayName": "User_App_Authorization",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "authorized_at": {
+      "type": "datetime"
+    },
+    "company_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::company-user.company-user"
+    },
+    "company_app": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::company-app.company-app"
+    }
+  }
+}

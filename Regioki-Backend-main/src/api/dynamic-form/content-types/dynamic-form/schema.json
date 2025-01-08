@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dynamic_forms",
+  "info": {
+    "singularName": "dynamic-form",
+    "pluralName": "dynamic-forms",
+    "displayName": "Dynamic_Form",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "form_data": {
+      "type": "json"
+    },
+    "extracted_value": {
+      "type": "json"
+    },
+    "company_userID": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::company-user.company-user",
+      "inversedBy": "Dynamic_Forms"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}
