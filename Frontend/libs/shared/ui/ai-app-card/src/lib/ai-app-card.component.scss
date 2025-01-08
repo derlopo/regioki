@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250px;
+  background: #ffffff;
+  border: 1px solid #d2dcdc;
+  border-radius: 16px;
+  margin-top: 10px;
+  padding: 18px;
+  position: relative;
+}
+.mat-menu-btn:hover {
+  background-color: #008080 !important; /* Change to green on hover */
+  color:#ffffff !important ;
+}
+.mat-menu-btn {
+  color: black; /* Default text color */
+  background-color: transparent; /* Default background color */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+.mat-menu-btn:hover mat-icon {
+  color: white; /* Icon color on hover */
+}
+
+.menu-btn {
+  position: absolute;
+  top:0;
+  padding: 0px;
+  right: 10px;
+  border: none;
+  justify-content: flex-end;
+  width: fit-content;
+  height: fit-content;
+  background-color: #ffffff;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+
+.sub-card {
+  width: 72px;
+  height: 72px;
+  background-color: #ffffff;
+  padding: 6px;
+  gap: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(128, 130, 130, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 1;
+}
+
+.sub-card img {
+  width: 65px;
+  height: 65px;
+  border-radius: 12px;
+  margin-top: 7px;
+}
+
+.icon-gtps {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.Icon {
+  background:#E5F2F2;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 15px;
+}
+
+.title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2f3e3e;
+}
+
+p {
+  width: 295px;
+  height: fit-content;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  text-align: start;
+  color: #434659;
+}
+.default-label {
+  margin-left:16rem;
+  margin-top: -1rem;
+  z-index: 0;
+}
+
